@@ -1,65 +1,39 @@
-# Metal-Division-Magazine
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Das Webzine mit aktuellen News, CD- und Live-Reviews aus den Bereichen Rock bis zum extremsten Metal.">
-  <meta name="keywords" content="Metal Division, Rock, Metal, News, Reviews, Konzerte, Galerie">
   <title>Metal Division Magazine</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #111; color: #eee; margin: 0; padding: 0; }
-    header, footer { background: #222; padding: 1em; text-align: center; }
-    nav { background: #333; padding: 1em; text-align: center; }
-    nav a { color: #eee; margin: 0 1em; text-decoration: none; font-weight: bold; }
-    .lang-toggle { text-align: right; padding: 1em; }
-    .lang-toggle button { margin-left: 1em; }
-    .content { max-width: 800px; margin: auto; padding: 2em; }
-    .hidden { display: none; }
-    h2 { color: #c00; }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
   <header>
-    <h1>METAL DIVISION MAGAZINE</h1>
-    <p>Aktuelle News, CD- und Live-Reviews aus den Bereichen Rock bis zum extremsten Metal.</p>
+    <img src="assets/images/banner.jpg" alt="Metal Division Banner" class="banner">
   </header>
 
   <nav>
-    <a href="news/index.html">News</a>
-    <a href="reviews/index.html">Reviews</a>
-    <a href="shows/index.html">Live</a>
-    <a href="gallery/index.html">Galerie</a>
-    <a href="archive/index.html">Archiv</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="reviews.html">CD-Reviews</a></li>
+      <li><a href="gallery.html">Galerie</a></li>
+      <li><a href="live.html">Live-Review</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
   </nav>
 
-  <div class="lang-toggle">
-    <button onclick="switchLang('de')">Deutsch</button>
-    <button onclick="switchLang('en')">English</button>
-  </div>
-
-  <div class="content" id="de">
-    <h2>Willkommen beim Metal Division Magazine</h2>
-    <p>Das Webzine mit aktuellen News, CD- und Live-Reviews aus den Bereichen Rock bis zum extremsten Metal. Dazu Bildergalerien und Konzertberichte – regelmäßig aktualisiert.</p>
-    <p>Starte mit den <a href="news/index.html">aktuellen News</a> oder stöbere im <a href="archive/index.html">Archiv</a>.</p>
-  </div>
-
-  <div class="content hidden" id="en">
-    <h2>Welcome to Metal Division Magazine</h2>
-    <p>The webzine featuring current news, CD and live reviews from rock to the most extreme forms of metal. Including photo galleries and concert reports – updated regularly.</p>
-    <p>Start with the <a href="news/index.html">latest news</a> or browse the <a href="archive/index.html">archive</a>.</p>
-  </div>
+  <main>
+    <section>
+      <h1>Home</h1>
+      <p>Diese Seite wird aktuell für Metal Division erstellt. Inhalte folgen in Kürze.</p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Metal Division Magazine
+    <p>&copy; 2025 Metal Division Magazine</p>
   </footer>
 
-  <script>
-    function switchLang(lang) {
-      document.getElementById('de').classList.add('hidden');
-      document.getElementById('en').classList.add('hidden');
-      document.getElementById(lang).classList.remove('hidden');
-    }
-  </script>
 </body>
 </html>
