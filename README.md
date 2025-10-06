@@ -1,3 +1,8 @@
+git clone https://github.com/dein-nutzername/dein-repo.git
+cd dein-repo
+git rm -r *
+git commit -m "Leere Struktur für Neuanfang"
+git push
 
 <html lang="de">
 <head>
